@@ -39,3 +39,4 @@ make CROSS_COMPILE=
 echo "blacklist rtl8192cu" > /etc/modprobe.d/blacklist.conf
 modprobe  8192cu
 
+rm -rf /usr/src/linux-3.8.13-bone28/
