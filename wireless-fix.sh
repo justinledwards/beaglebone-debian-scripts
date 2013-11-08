@@ -13,4 +13,5 @@ chmod +x bb-get-rcn-kernel-source.sh
 # root@arm:/usr/local/lib# tar -czvf node_modules.tar.gz node_modules/
 # root@arm:~# tar -czvf npm.tar.gz .npm/
 #todo un gzip later
+# apt-get clean
 
