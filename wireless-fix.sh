@@ -37,6 +37,7 @@ cd rtl8188C_8192C_usb_linux_v4.0.2_9000.20130911
 wget https://raw.github.com/cmicali/rtl8192cu_beaglebone/master/util/rtl-8192-beaglebone-linux-3.8.patch
 patch -p1 < rtl-8192-beaglebone-linux-3.8.patch
 make CROSS_COMPILE=
+echo "options 8192cu rtw_power_mgnt=0 rtw_enusbss=0" > /etc/modprobe.d/8192cu.conf
 echo "blacklist rtl8192cu" > /etc/modprobe.d/blacklist.conf
 modprobe  8192cu
 
