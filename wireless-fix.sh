@@ -14,4 +14,8 @@ chmod +x bb-get-rcn-kernel-source.sh
 # root@arm:~# tar -czvf npm.tar.gz .npm/
 #todo un gzip later
 # apt-get clean
-
+# root@arm:/usr/share/locale# rm -rf [a-d]*
+# root@arm:/usr/share/locale# rm -rf [f-k]*
+# root@arm:/usr/share/locale# rm -rf [m-z]*
+# root@arm:/usr/share/locale# rm -rf el/ eo/ es/ et/ et_EE/ eu/ lg/ lt/ lv/
+# df -h | awk '$1=="rootfs"{print$4}' | sed 's/\M//'
