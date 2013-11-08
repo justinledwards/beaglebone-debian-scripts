@@ -1,7 +1,8 @@
 #!/bin/bash
 # edit /etc/network/interfaces
 # change dhcp to static and manually enter your network configuration with a static ip
-# 
+# make sure channel is part of configuration
+
 freespace=`df -h | awk '$1=="rootfs"{print$4}' | sed 's/\M//'`
 if [ $freespace -lt 900 ]; then
   echo "not enough free space"
